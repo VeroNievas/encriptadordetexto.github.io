@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Vector.png" alt="logo alura" class="logo">
+    </header>
+    <main class="container">
+        <section class="principal">
+            <textarea name="" id="textoentrada" cols="30" rows="10" placeholder="Ingrese el texto aquí" class="textoentrada" type="text" pattern="[a-z]{1,500}"></textarea>
+            <div class="avisopadre">
+                <div class="avisohijo"><img src="imagenes/vector¡.png" alt="" class="vector"><h6>Sólo letras minúsculas y sin acentos<h6></div>
+            </div>
+            <div class="botones">
+                <button class="botonencriptar">Encriptar</button>
+                <button class="botondesencriptar">Desencriptar</button>
+            </div>
+        </section>
+       
+        <section id="copiarpadre" class="copiarpadre">
+                <img id="muñeco" class="muñeco" src="imagenes/Muñeco.png" alt="">
+                <div>
+                    <h3 id="mensaje">Ningún mensaje fue encontrado<h3> 
+                </div>
+                <textarea name="" id="textosalida" cols="30" rows="10" placeholder="Ingrese el texto que desee encriptar o desencriptar" class="textosalida"></textarea>
+                <div>
+                    <button class="botoncopiar">Copiar</button>
+                </div>  
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
